@@ -19,16 +19,16 @@ QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
 
 #include "include.h"
 //#define BT_SHOW    PTC7
-#define BT_RIGHT   PTD13//PTC8
-#define BT_UP      PTD14//PTC6
-#define BT_DOWN    PTD10//PTC9
-#define BT_YES     PTD11
-#define BT_LEFT    PTD12//PTC10
+#define BT_RIGHT_LEFT   PTB20//PTC8
+#define BT_UP_DOWN      PTB21//PTC6
+//#define BT_DOWN    PTD10//PTC9
+#define BT_YES     PTB22
+//#define BT_LEFT    PTD12//PTC10
 
-#define SW1      PTD4//PTC12
-#define SW2      PTD5//PTC13
-#define SW3      PTD6//PTC14
-#define SW4      PTD7//PTC15
+#define SW1      PTC6//PTC12
+#define SW2      PTC7//PTC13
+#define SW3      PTC8//PTC14
+#define SW4      PTC9//PTC15
 
 
 #define SW1_IN   gpio_get(SW1)
