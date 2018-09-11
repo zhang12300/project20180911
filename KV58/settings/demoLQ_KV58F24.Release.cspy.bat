@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Lenovo\Desktop\class3\SRTP\kv58Final\KV58Final最终\KV58\settings\demoLQ_KV58F24.Release.general.xcl" --backend -f "C:\Users\Lenovo\Desktop\class3\SRTP\kv58Final\KV58Final最终\KV58\settings\demoLQ_KV58F24.Release.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\SPB_Data\learngit\learngithub\project20180911\KV58\settings\demoLQ_KV58F24.Release.general.xcl" --backend -f "C:\SPB_Data\learngit\learngithub\project20180911\KV58\settings\demoLQ_KV58F24.Release.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Lenovo\Desktop\class3\SRTP\kv58Final\KV58Final最终\KV58\settings\demoLQ_KV58F24.Release.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Lenovo\Desktop\class3\SRTP\kv58Final\KV58Final最终\KV58\settings\demoLQ_KV58F24.Release.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\SPB_Data\learngit\learngithub\project20180911\KV58\settings\demoLQ_KV58F24.Release.general.xcl" "--debug_file=%~1" --backend -f "C:\SPB_Data\learngit\learngithub\project20180911\KV58\settings\demoLQ_KV58F24.Release.driver.xcl" 
 
 @echo off 
 :end
