@@ -467,7 +467,28 @@ void Read_Switch()
 //      while(BT_DOWN_IN==0);  //直到按键松开再运行
 //   }
 //}
+//#define BT_SHOW    PTC7
+//#define BT_RIGHT_LEFT   PTB20//PTC8
+//#define BT_UP_DOWN      PTB21//PTC6
 
+//#define BT_YES     PTB22
+/
+//
+//#define SW1      PTC6//PTC12
+//#define SW2      PTC7//PTC13
+//#define SW3      PTC8//PTC14
+//#define SW4      PTC9//PTC15
+//
+//
+//#define SW1_IN   gpio_get(SW1)
+//#define SW2_IN   gpio_get(SW2)
+//#define SW3_IN   gpio_get(SW3)
+//#define SW4_IN   gpio_get(SW4)
+//
+////#define BT_SHOW_IN  gpio_get(BT_SHOW)
+//#define BT_LEFT_IN_RIGHT_IN   gpio_get(BT_RIGHT_LEFT)
+//#define BT_UP_IN_DOWN_IN     gpio_get(BT_UP_DOWN)
+//#define BT_YES_IN    gpio_get(BT_YES)
 void Check_BottonPress()
 {
    //按键5 yes
@@ -496,12 +517,12 @@ void Check_BottonPress()
       while(BT_YES_IN==0); //直到按键松开再运行
    }
    //按键1 Left_L
-     if(BT_LEFT_IN==0)           //KEY1  左翻页 增大步长
+     if(BT_LEFT_IN_RIGHT_IN==0&&gpio_get(SW4)==0)           //KEY1  左翻页 增大步长
    {
       //去抖
 //       DELAY_MS(30);
      time_delay_ms(30);
-      if(BT_LEFT_IN==0)
+      if(BT_LEFT_IN_RIGHT_IN==0)
       {
         if(Para_Checked) 
         {
@@ -519,15 +540,15 @@ void Check_BottonPress()
           OLED_Fill(0);//清屏 
         }
       }
-      while(BT_LEFT_IN==0);//直到按键松开再运行
+      while(BT_LEFT_IN_RIGHT_IN==0);//直到按键松开再运行
    } 
    //按键2 Right_L
-     if(BT_RIGHT_IN==0 && OLED_Refresh)   //KEY2    右翻页 减小步长
+     if(BT_LEFT_IN_RIGHT_IN==0 && OLED_Refresh&&gpio_get(SW4)==1)   //KEY2    右翻页 减小步长
    {
       //去抖
 //       DELAY_MS(30);
       time_delay_ms(30);
-      if(BT_RIGHT_IN==0)
+      if(BT_LEFT_IN_RIGHT_IN==0)
       {
         if(Para_Checked) 
         {
@@ -548,14 +569,14 @@ void Check_BottonPress()
          OLED_Fill(0);//清屏 
         }
       }
-      while(BT_RIGHT_IN==0);      //直到按键松开再运行
+      while(BT_LEFT_IN_RIGHT_IN==0);      //直到按键松开再运行
    }
    //按键3 up
-     if(BT_UP_IN==0&&OLED_Refresh)     //KEY3
+     if(BT_UP_IN_DOWN_IN==0&&OLED_Refresh&&gpio_get(SW4)==0)     //KEY3
    {
 //       DELAY_MS(30);
       time_delay_ms(30);
-      if(BT_UP_IN==0)
+      if(BT_UP_IN_DOWN_IN==0)
       {
 
           if(Para_Checked==false)
@@ -579,16 +600,16 @@ void Check_BottonPress()
             Para_Update();
           }
       }  
-      while(BT_UP_IN==0);//直到按键松开再运行  
+      while(BT_UP_IN_DOWN_IN==0);//直到按键松开再运行  
    }
    //按键4 down
-     if(BT_DOWN_IN==0)            //KEY4  参数增大，
+     if(BT_UP_IN_DOWN_IN==0&&gpio_get(SW4)==1)            //KEY4  参数增大，
    {
      if(OLED_Refresh)
      {
 //       DELAY_MS(30);
       time_delay_ms(30);
-      if(BT_DOWN_IN==0)
+      if(BT_UP_IN_DOWN_IN==0)
       {
           if(Para_Checked==false)
           {             
@@ -632,7 +653,7 @@ void Check_BottonPress()
        }
      }
 
-      while(BT_DOWN_IN==0);  //直到按键松开再运行
+      while(BT_UP_IN_DOWN_IN==0);  //直到按键松开再运行
    }
 }
 
