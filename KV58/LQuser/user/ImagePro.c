@@ -119,7 +119,8 @@ uint16 SignalGet(void){
       
       LightCnt = 0;  //新图像白点数清零
    //   Img_Filter();   //图像滤波  搜索连通域面积 
-      for(imgRow = ScanStartLine ; imgRow < ScanEndLine - 1; imgRow++)
+      for(imgRow = ScanStartLine ; imgRow < ScanEndLine - 1; imgRow++)//uint8  ScanStartLine = 0;	//信标搜索起始行   10
+                                                                      //uint8  ScanEndLine = 60;	    //信标搜索结束行
       {
             LineLightFlag = 0;               //清零行内亮点标志
             for(imgCol = StartCol; imgCol < EndCol; imgCol++)

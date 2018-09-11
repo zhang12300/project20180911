@@ -184,10 +184,12 @@ void  main(void)
   LCD_CLS();                //清屏
   OLED_P6x8Str(60,4,"Wait");
   TakeOff = 1;
-  while(infrared_succeed == 0)
-  {
-   infrared_succeed = infrared_pro();   //红外采集，成功返回1;
-  }
+//  现在没有红外模块 by zhang 20180911
+//  while(infrared_succeed == 0)
+//  {
+//   infrared_succeed = infrared_pro();   //红外采集，成功返回1;
+//  }
+ 
   EnableInterrupts; //打开中断  
   Motor_Duty(Mot0, 300);
   Motor_Duty(Mot2, 300);
@@ -222,7 +224,7 @@ void  main(void)
 //        Read_Switch();      //开关按键扫描
 //      }  
       
-       while(Send_img && new_img)    //传图像
+       while(Send_img && new_img)    //传图像//uint8 Send_img = 0;初始值为0；拨码2SW2会改变Send_img的值 by zhang 2018 09 11
        {
           new_img = 0;
           
