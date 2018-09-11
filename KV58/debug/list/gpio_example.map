@@ -1,0 +1,788 @@
+###############################################################################
+#
+# IAR ELF Linker V8.20.1.14183/W32 for ARM                17/Jul/2018  13:12:00
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\gpio_example.out
+#    Map file     =  
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\list\gpio_example.map
+#    Command line =  
+#        -f C:\Users\lenovo\AppData\Local\Temp\EW437E.tmp
+#        (C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\APPmain.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\CCD.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\control.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\debug.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_clock_manager.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_clock_manager_common.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_clock_MKV58F24.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_debug_console.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_dmamux_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hsadc_common.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hsadc_driver.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hsadc_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hwtimer.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hwtimer_pit.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hwtimer_systick.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_hwtimer_systick_irq.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_interrupt_manager.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_interrupt_manager_common.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_interrupt_manager_irq.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_llwu_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_mcg_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_mcg_hal_modes.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_misc_utilities.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_mscm_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_osc_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_port_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_power_manager.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_rcm_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_sim_hal_MKV58F24.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\fsl_smc_hal.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\function.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\Fuzzy.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\ImagePro.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\infrared.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LPTMR.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQ12864SPI.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQ_KEY.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQ_LED.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQ_PLL.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQ_SGP18T.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQADC.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQDMA.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQFTM.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQGPIO.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQMT9V034.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQPIT.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQUART.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\LQWDOG.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\pin_mux.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\print_scan.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\SCCB.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\search.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\startup.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\startup_MKV58F24.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\system_MKV58F24.o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj\Ultrasound.o --redirect
+#        _Printf=_PrintfSmallNoMb --redirect _Scanf=_ScanfSmallNoMb -o
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\gpio_example.out
+#        --config_def __stack_size__=0x2000 --config_def __heap_size__=0x2000
+#        --map C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\list\gpio_example.map
+#        --config
+#        C:\Users\lenovo\Desktop\KV58yhy\KV58\LQuser\devices\linker\MKV58F1M0xxx24_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x10000000 { ro section .intvec };
+"P1":  place in [from 0x10000400 to 0x1000040f] { section FlashConfig };
+"P2":  place in [from 0x10000000 to 0x100003ff] |
+                [from 0x10000410 to 0x100fffff] { ro };
+define block RW { rw };
+"P3":  place in [from 0x20000000 to 0x2001dfff] { block RW };
+define block ZI { zi };
+"P4":  place in [from 0x20000000 to 0x2001dfff] { block ZI };
+define block CSTACK with size = 8K, alignment = 8 { };
+"P6":  place in [from 0x2001e000 to 0x2001ffff] { block CSTACK };
+initialize by copy { rw, section .textrw };
+
+No sections matched the following patterns:
+
+  section m_interrupts_ram  in "P7"
+  section m_itcm            in "P8"
+  section m_ocram           in "P9"
+
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                      0x400
+  .intvec            ro code  0x10000000   0x400  startup_MKV58F24.o [1]
+                            - 0x10000400   0x400
+
+"P1":                                       0x10
+  FlashConfig        ro code  0x10000400    0x10  startup_MKV58F24.o [1]
+                            - 0x10000410    0x10
+
+"P2":                                     0x5305
+  .text              ro code  0x10000410   0xaec  LQ12864SPI.o [1]
+  .text              ro code  0x10000efc   0x144  LQGPIO.o [1]
+  .text              ro code  0x10001040    0x44  LPTMR.o [1]
+  .text              ro code  0x10001084    0x48  FltToDbl.o [4]
+  .text              ro code  0x100010cc   0x178  DblAdd.o [4]
+  .text              ro code  0x10001244    0x68  DblToFlt.o [4]
+  .text              ro code  0x100012ac    0xd2  DblSub.o [4]
+  .text              ro code  0x1000137e     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10001380   0x858  debug.o [1]
+  .text              ro code  0x10001bd8   0x1d4  LQUART.o [1]
+  .text              ro code  0x10001dac   0x1a2  DblMul.o [4]
+  .text              ro code  0x10001f4e     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10001f50   0x4c4  LQFTM.o [1]
+  .text              ro code  0x10002414   0x1bc  LQ_LED.o [1]
+  .text              ro code  0x100025d0   0x798  control.o [1]
+  .text              ro code  0x10002d68    0x22  S32ToDbl.o [4]
+  .text              ro code  0x10002d8a     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10002d8c   0x246  DblDiv.o [4]
+  .text              ro code  0x10002fd2     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10002fd4   0x108  Ultrasound.o [1]
+  .text              ro code  0x100030dc   0x454  fsl_mcg_hal_modes.o [1]
+  .text              ro code  0x10003530   0x2f0  fsl_mcg_hal.o [1]
+  .text              ro code  0x10003820   0x354  fsl_clock_manager.o [1]
+  .text              ro code  0x10003b74    0x24  ABIassert.o [6]
+  .text              ro code  0x10003b98     0xc  fsl_osc_hal.o [1]
+  .text              ro code  0x10003ba4     0x6  abort.o [3]
+  .text              ro code  0x10003baa     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10003bac    0x14  exit.o [6]
+  Veneer             ro code  0x10003bc0     0x8  - Linker created -
+  Veneer             ro code  0x10003bc8     0x8  - Linker created -
+  .text              ro code  0x10003bd0   0x2f6  LQMT9V034.o [1]
+  .text              ro code  0x10003ec6     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10003ec8   0x2f6  SCCB.o [1]
+  .text              ro code  0x100041be     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x100041c0   0x260  CCD.o [1]
+  .text              ro code  0x10004420    0x7c  LQADC.o [1]
+  .text              ro code  0x1000449c    0xa6  ABImemcpy.o [5]
+  .text              ro code  0x10004542     0x2  startup_MKV58F24.o [1]
+  .text              ro code  0x10004544   0x228  APPmain.o [1]
+  .text              ro code  0x1000476c    0xc8  function.o [1]
+  .text              ro code  0x10004834    0xf4  infrared.o [1]
+  .text              ro code  0x10004928   0x15c  ImagePro.o [1]
+  .text              ro code  0x10004a84    0x3c  search.o [1]
+  .text              ro code  0x10004ac0   0x1ec  LQ_PLL.o [1]
+  .text              ro code  0x10004cac    0x78  LQ_KEY.o [1]
+  .text              ro code  0x10004d24    0x8c  LQPIT.o [1]
+  .text              ro code  0x10004db0   0x168  fsl_smc_hal.o [1]
+  .text              ro code  0x10004f18   0x110  fsl_clock_MKV58F24.o [1]
+  .text              ro code  0x10005028    0x2e  fsl_sim_hal_MKV58F24.o [1]
+  .text              ro code  0x10005058    0xb0  system_MKV58F24.o [1]
+  .text              ro code  0x10005108    0x9c  packbits_init.o [5]
+  .text              ro code  0x100051a4    0x40  fsl_hwtimer_systick.o [1]
+  .text              ro code  0x100051e4    0x40  zero_init3.o [5]
+  .text              ro code  0x10005224    0x34  LQDMA.o [1]
+  .text              ro code  0x10005258    0x30  startup.o [1]
+  .text              ro code  0x10005288    0x28  data_init.o [5]
+  .text              ro code  0x100052b0    0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x100052d4    0x2c  - Linker created -
+  .text              ro code  0x10005300    0x1e  cmain.o [5]
+  .text              ro code  0x1000531e     0x4  low_level_init.o [3]
+  .text              ro code  0x10005322     0x4  exit.o [3]
+  .text              ro code  0x10005328     0xa  cexit.o [5]
+  .text              ro code  0x10005334    0x1c  startup_MKV58F24.o [1]
+  .text              ro code  0x10005350    0x10  fsl_hwtimer_systick_irq.o [1]
+  .text              ro code  0x10005360     0xc  cstartup_M.o [5]
+  .rodata            const    0x1000536c     0x4  fsl_clock_manager_common.o [1]
+  .text              ro code  0x10005370     0x4  startup_MKV58F24.o [1]
+  .rodata            const    0x10005374     0x0  zero_init3.o [5]
+  .rodata            const    0x10005374     0x0  packbits_init.o [5]
+  Initializer bytes  const    0x10005374   0x3a1  <for RW-1>
+                            - 0x10005715  0x5305
+
+"P3-P4", part 1 of 2:                      0x428
+  RW                          0x20000000   0x428  <Block>
+    RW-1                      0x20000000   0x428  <Init block>
+      .data          inited   0x20000000     0x4  control.o [1]
+      .data          inited   0x20000004   0x120  control.o [1]
+      .data          inited   0x20000124    0xc0  debug.o [1]
+      .data          inited   0x200001e4     0x8  fsl_mcg_hal.o [1]
+      .data          inited   0x200001ec    0x14  LQGPIO.o [1]
+      .data          inited   0x20000200    0x14  LQGPIO.o [1]
+      .data          inited   0x20000214    0x65  LQMT9V034.o [1]
+      .data          inited   0x2000027c    0x18  LQUART.o [1]
+      .data          inited   0x20000294     0x4  system_MKV58F24.o [1]
+      Veneer         inited   0x20000298     0x8  - Linker created -
+      .textrw        inited   0x200002a0   0x170  LQMT9V034.o [1]
+      .data          inited   0x20000410    0x14  ImagePro.o [1]
+      .data          inited   0x20000424     0x4  CCD.o [1]
+                            - 0x20000428   0x428
+
+"P3-P4", part 2 of 2:                     0x19f4
+  ZI                          0x20000428  0x19f4  <Block>
+    .bss             zero     0x20000428     0x4  APPmain.o [1]
+    .bss             zero     0x2000042c    0x80  CCD.o [1]
+    .bss             zero     0x200004ac    0x84  control.o [1]
+    .bss             zero     0x20000530     0x4  control.o [1]
+    .bss             zero     0x20000534     0x4  control.o [1]
+    .bss             zero     0x20000538     0x4  control.o [1]
+    .bss             zero     0x2000053c     0x4  control.o [1]
+    .bss             zero     0x20000540     0x4  control.o [1]
+    .bss             zero     0x20000544     0x4  control.o [1]
+    .bss             zero     0x20000548     0x4  control.o [1]
+    .bss             zero     0x2000054c     0x4  control.o [1]
+    .bss             zero     0x20000550     0x4  control.o [1]
+    .bss             zero     0x20000554    0x10  control.o [1]
+    .bss             zero     0x20000564    0x50  debug.o [1]
+    .bss             zero     0x200005b4     0x4  fsl_hwtimer_systick.o [1]
+    .bss             zero     0x200005b8     0x4  fsl_mcg_hal.o [1]
+    .bss             zero     0x200005bc    0x20  infrared.o [1]
+    .bss             zero     0x200005dc     0x8  LQ_PLL.o [1]
+    .bss             zero     0x200005e4   0x258  LQMT9V034.o [1]
+    .bss             zero     0x2000083c   0x258  LQMT9V034.o [1]
+    .bss             zero     0x20000a94  0x12c0  LQMT9V034.o [1]
+    .bss             zero     0x20001d54    0xb4  LQMT9V034.o [1]
+    .bss             zero     0x20001e08     0xc  Ultrasound.o [1]
+    .bss             zero     0x20001e14     0x2  control.o [1]
+    .bss             zero     0x20001e16     0x2  APPmain.o [1]
+    .bss             zero     0x20001e18     0x1  control.o [1]
+    .bss             zero     0x20001e19     0x1  control.o [1]
+    .bss             zero     0x20001e1a     0x1  LQ12864SPI.o [1]
+    .bss             zero     0x20001e1b     0x1  LQMT9V034.o [1]
+                            - 0x20001e1c  0x19f4
+
+"P6":                                     0x2000
+  CSTACK                      0x2001e000  0x2000  <Block>
+    CSTACK           uninit   0x2001e000  0x2000  <Block tail>
+                            - 0x20020000  0x2000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x19f4:
+          0x20000428  0x19f4
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x3a1 (87% of destination):
+          0x10005374   0x3a1
+    1 destination range, total size 0x428:
+          0x20000000   0x428
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                      ro code  rw code  ro data  rw data
+    ------                      -------  -------  -------  -------
+C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj: [1]
+    APPmain.o                       552                          6
+    CCD.o                           608                 4      132
+    ImagePro.o                      348                17       20
+    LPTMR.o                          68
+    LQ12864SPI.o                  2 796                          1
+    LQADC.o                         124
+    LQDMA.o                          52
+    LQFTM.o                       1 220
+    LQGPIO.o                        324                35       40
+    LQMT9V034.o                     758      368      410    6 282
+    LQPIT.o                         140
+    LQUART.o                        468                24       24
+    LQ_KEY.o                        120
+    LQ_LED.o                        444
+    LQ_PLL.o                        492                          8
+    SCCB.o                          758
+    Ultrasound.o                    264                         12
+    control.o                     1 944               254      480
+    debug.o                       2 136               168      272
+    fsl_clock_MKV58F24.o            272
+    fsl_clock_manager.o             852
+    fsl_clock_manager_common.o                          4
+    fsl_hwtimer_systick.o            64                          4
+    fsl_hwtimer_systick_irq.o        16
+    fsl_mcg_hal.o                   752                 7       12
+    fsl_mcg_hal_modes.o           1 108
+    fsl_osc_hal.o                    12
+    fsl_sim_hal_MKV58F24.o           46
+    fsl_smc_hal.o                   360
+    function.o                      200
+    infrared.o                      244                         32
+    search.o                         60
+    startup.o                        48
+    startup_MKV58F24.o            1 088
+    system_MKV58F24.o               176                 3        4
+    --------------------------------------------------------------
+    Total:                       18 914      368      926    7 329
+
+command line: [2]
+    --------------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    abort.o                           6
+    exit.o                            4
+    low_level_init.o                  4
+    --------------------------------------------------------------
+    Total:                           14
+
+m7M_tls.a: [4]
+    DblAdd.o                        376
+    DblDiv.o                        582
+    DblMul.o                        418
+    DblSub.o                        210
+    DblToFlt.o                      104
+    FltToDbl.o                       72
+    S32ToDbl.o                       34
+    fpinit_M.o                       34
+    --------------------------------------------------------------
+    Total:                        1 830
+
+rt7M_tl.a: [5]
+    ABImemcpy.o                     166
+    cexit.o                          10
+    cmain.o                          30
+    cstartup_M.o                     12
+    data_init.o                      40
+    packbits_init.o                 156
+    zero_init3.o                     64
+    --------------------------------------------------------------
+    Total:                          478
+
+shb_l.a: [6]
+    ABIassert.o                      36
+    exit.o                           20
+    --------------------------------------------------------------
+    Total:                           56
+
+    Gaps                              6                 2        3
+    Linker created                   16        8       51    8 192
+------------------------------------------------------------------
+    Grand Total:                 21 314      376      979   15 524
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x100052d4           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x10005300           --   Gb  - Linker created -
+?main                   0x10005301          Code  Gb  cmain.o [5]
+ADC0_Init               0x10004421    0x18  Code  Gb  LQADC.o [1]
+ADC0_Once               0x10004477    0x1c  Code  Gb  LQADC.o [1]
+ADC0_Start              0x10004439    0x3e  Code  Gb  LQADC.o [1]
+AverageSpeed            0x20000540     0x4  Data  Gb  control.o [1]
+BOARD_InitOsc0          0x10004be9    0x1a  Code  Gb  LQ_PLL.o [1]
+CCD1Threshold           0x20000427     0x1  Data  Gb  CCD.o [1]
+CCD1_init               0x100041c1    0x2c  Code  Gb  CCD.o [1]
+CCD1_scan               0x100041ed    0x4c  Code  Gb  CCD.o [1]
+CCDFixTable             0x2000005c    0x28  Data  Gb  control.o [1]
+CCDLbuchang             0x20000084    0x28  Data  Gb  control.o [1]
+CCDLightCnt             0x20000424     0x1  Data  Gb  CCD.o [1]
+CCDPosition             0x20000425     0x1  Data  Gb  CCD.o [1]
+CCDRbuchang             0x200000ac    0x28  Data  Gb  control.o [1]
+CCDServoKd              0x200000e8     0x4  Data  Gb  control.o [1]
+CCDServoKp              0x200000e4     0x4  Data  Gb  control.o [1]
+CCD_Center              0x200000f8     0x4  Data  Gb  control.o [1]
+CCD_DeltaDev            0x20000104     0x4  Data  Gb  control.o [1]
+CCD_Devifuse            0x200000fc     0x4  Data  Gb  control.o [1]
+CCD_PreDev              0x20000100     0x4  Data  Gb  control.o [1]
+CCD_pro                 0x10004239   0x156  Code  Gb  CCD.o [1]
+CLOCK_HAL_EnablePll0InFllMode
+                        0x10003735    0x34  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x1000382d     0xc  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x10003531     0xc  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x100030dd     0xc  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetFllClk     0x1000364f    0x36  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetFllRefClk  0x100035df    0x3c  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetFllSrc     0x100030e9     0xa  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetInternalRefClk
+                        0x10003769    0x30  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x10003855     0xa  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x10003547     0xa  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x100030f3     0xa  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetMcgExternalClkFreq
+                        0x100035a9     0x8  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetMcgMode    0x10003145    0x80  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetOutClk     0x10003799    0x38  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetOutDiv1    0x10004f19    0x12  Code  Lc  fsl_clock_MKV58F24.o [1]
+CLOCK_HAL_GetPll0Clk    0x100036ef    0x46  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetPll0RefFreq
+                        0x100036ed     0x2  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsOsc0Stable  0x1000386b    0x14  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_IsOsc0Stable  0x10003579    0x14  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsOsc0Stable  0x10003131    0x14  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_IsPll0Locked  0x10003551    0x14  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsPll0Locked  0x10003109    0x14  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_IsPllSelected
+                        0x10003565    0x14  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsPllSelected
+                        0x1000311d    0x14  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_PrepareOsc    0x1000358d    0x1c  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_SetBlpeMode   0x10003475    0x14  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetBlpiMode   0x10003445    0x30  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetClkOutSrc  0x10003821     0xc  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetExternalRefClock32kSrc
+                        0x10004f2b     0xc  Code  Lc  fsl_clock_MKV58F24.o [1]
+CLOCK_HAL_SetFbeMode    0x10003389    0xbc  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetFbiMode    0x100032dd    0xac  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetFeeMode    0x10003247    0x96  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetFeiMode    0x100031c5    0x82  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetInternalRefClkEnableCmd
+                        0x10003839     0xa  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetInternalRefClkEnableInStopCmd
+                        0x10003843     0x8  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetInternalRefClkMode
+                        0x1000384b     0xa  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetInternalRefClkMode
+                        0x1000353d     0xa  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_SetOsc0Mode   0x100037d1    0x26  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_SetOutDiv     0x10005029    0x2e  Code  Gb  fsl_sim_hal_MKV58F24.o [1]
+CLOCK_HAL_SetPbeMode    0x10003489    0x82  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetPeeMode    0x1000350b    0x1a  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetPll0EnableCmd
+                        0x1000385f     0xc  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetPll0EnableCmd
+                        0x100030fd     0xc  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_TestFllExternalRefFreq
+                        0x100035b1    0x2e  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_TestFllFreq   0x1000361b    0x34  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_TestFllFreq::fllFactorTable
+                        0x10003810    0x10  Data  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_UpdateFastClkInternalRefDiv
+                        0x10003685    0x68  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_SYS_FllStableDelay
+                        0x100038a1    0x12  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_SYS_GetCoreClockFreq
+                        0x10004fab    0x18  Code  Gb  fsl_clock_MKV58F24.o [1]
+CLOCK_SYS_McgModeToIdx  0x100038b3    0x32  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_SYS_OscInit       0x10003a0d    0x9a  Code  Gb  fsl_clock_manager.o [1]
+CLOCK_SYS_SetConfiguration
+                        0x10004f59    0x50  Code  Gb  fsl_clock_MKV58F24.o [1]
+CLOCK_SYS_SetMcgMode    0x100038e5   0x128  Code  Gb  fsl_clock_manager.o [1]
+CLOCK_SYS_SetOscerConfigration
+                        0x10003aa7    0x24  Code  Gb  fsl_clock_manager.o [1]
+CLOCK_SYS_SetSimConfigration
+                        0x10004f37    0x22  Code  Gb  fsl_clock_MKV58F24.o [1]
+CSTACK$$Base            0x2001e000           --   Gb  - Linker created -
+CSTACK$$Limit           0x20020000           --   Gb  - Linker created -
+Camera_Center           0x200000f4     0x4  Data  Gb  control.o [1]
+Camera_threshhold       0x200000ec     0x4  Data  Gb  control.o [1]
+Camera_threshholdH      0x200000f0     0x4  Data  Gb  control.o [1]
+CarSpeedLeft            0x2000051c     0x4  Data  Gb  control.o [1]
+CarSpeedRight           0x20000524     0x4  Data  Gb  control.o [1]
+Check_BottonPress       0x100017c1   0x288  Code  Gb  debug.o [1]
+ControlSpeed            0x2000053c     0x4  Data  Gb  control.o [1]
+Control_Para            0x20000130    0x3c  Data  Gb  debug.o [1]
+DLY_ms                  0x10002769    0x1c  Code  Gb  control.o [1]
+DMA4_DMA20_IRQHandler   0x10005225    0x24  Code  Gb  LQDMA.o [1]
+DMATransDataInit        0x200002a1   0x12a  Code  Gb  LQMT9V034.o [1]
+DMATransDataStart       0x200003cb    0x28  Code  Gb  LQMT9V034.o [1]
+DeltaDev                0x2000010c     0x4  Data  Gb  control.o [1]
+Devifuse                0x20000108     0x4  Data  Gb  control.o [1]
+Direction_Control       0x1000286d   0x446  Code  Gb  control.o [1]
+Distance                0x20000548     0x4  Data  Gb  control.o [1]
+EXTI_Init               0x10000fd1    0x4c  Code  Gb  LQGPIO.o [1]
+F6x8                    0x10000cd4   0x228  Data  Gb  LQ12864SPI.o [1]
+FTM_AB_Get              0x1000234d     0xc  Code  Gb  LQFTM.o [1]
+FTM_AB_Init             0x10002299    0xb4  Code  Gb  LQFTM.o [1]
+FTM_PWM_Init            0x10001f51   0x1a4  Code  Gb  LQFTM.o [1]
+Fixi                    0x20000004     0x1  Data  Gb  control.o [1]
+FrontLeftFixTable       0x20000034    0x28  Data  Gb  control.o [1]
+FrontRightFixTable      0x2000000c    0x28  Data  Gb  control.o [1]
+FrontServoKd            0x200000e0     0x4  Data  Gb  control.o [1]
+FrontServoKp            0x200000dc     0x4  Data  Gb  control.o [1]
+Fuzzy_Kd                0x20000550     0x4  Data  Gb  control.o [1]
+Fuzzy_Kp                0x2000054c     0x4  Data  Gb  control.o [1]
+GPIOX                   0x200001ec    0x14  Data  Gb  LQGPIO.o [1]
+GPIO_Init               0x10000f0f    0x6e  Code  Gb  LQGPIO.o [1]
+GPIO_Reverse            0x10000f7d     0xe  Code  Gb  LQGPIO.o [1]
+Get_Speed               0x1000264d   0x11c  Code  Gb  control.o [1]
+HWTIMER_SYS_SystickIsrAction
+                        0x100051a5    0x36  Code  Gb  fsl_hwtimer_systick.o [1]
+HighSpeed               0x2000012b     0x1  Data  Gb  debug.o [1]
+KEY_SW_Init             0x10004cad    0x74  Code  Gb  LQ_KEY.o [1]
+LCD_CLS                 0x10000529    0x34  Code  Gb  LQ12864SPI.o [1]
+LCD_Fill                0x100004f3    0x36  Code  Gb  LQ12864SPI.o [1]
+LCD_Init                0x1000055d   0x110  Code  Gb  LQ12864SPI.o [1]
+LCD_P6x8Str             0x1000066d    0x5e  Code  Gb  LQ12864SPI.o [1]
+LCD_Set_Pos             0x100004cd    0x26  Code  Gb  LQ12864SPI.o [1]
+LCD_WrCmd               0x1000046d    0x60  Code  Gb  LQ12864SPI.o [1]
+LCD_WrDat               0x10000411    0x5c  Code  Gb  LQ12864SPI.o [1]
+LED_Ctrl                0x10002469   0x158  Code  Gb  LQ_LED.o [1]
+LED_Init                0x10002415    0x54  Code  Gb  LQ_LED.o [1]
+LMR                     0x20001d54    0xb4  Data  Gb  LQMT9V034.o [1]
+LPTMR0_IRQHandler       0x10001071     0xc  Code  Gb  LPTMR.o [1]
+LPTMR_delay_ms          0x10001043    0x2e  Code  Gb  LPTMR.o [1]
+LightCnt                0x20000420     0x2  Data  Gb  ImagePro.o [1]
+LightCntAvg             0x2000041a     0x2  Data  Gb  ImagePro.o [1]
+LightCntAvgPre          0x2000041c     0x2  Data  Gb  ImagePro.o [1]
+MT9V034_Init            0x10003c01   0x170  Code  Gb  LQMT9V034.o [1]
+Max_White               0x20000426     0x1  Data  Gb  CCD.o [1]
+MotorControl            0x10002cb3    0x5a  Code  Gb  control.o [1]
+Motor_Duty              0x100023a9    0x24  Code  Gb  LQFTM.o [1]
+Motor_Init              0x10002359    0x3e  Code  Gb  LQFTM.o [1]
+NVIC_EnableIRQ          0x10000efd    0x12  Code  Lc  LQGPIO.o [1]
+NVIC_EnableIRQ          0x10003bd1    0x12  Code  Lc  LQMT9V034.o [1]
+NVIC_EnableIRQ          0x10004d25    0x12  Code  Lc  LQPIT.o [1]
+NoLightLimit            0x20000412     0x1  Data  Gb  ImagePro.o [1]
+OLED_Draw_UI            0x1000144d   0x260  Code  Gb  debug.o [1]
+OLED_Draw_camera        0x10000bed    0xc8  Code  Gb  LQ12864SPI.o [1]
+OLED_Fill               0x1000080d    0x38  Code  Gb  LQ12864SPI.o [1]
+OLED_P6x8Char           0x100008c9    0x3e  Code  Gb  LQ12864SPI.o [1]
+OLED_P6x8Str            0x10000845    0x84  Code  Gb  LQ12864SPI.o [1]
+OLED_PrintValueF        0x100009c5   0x228  Code  Gb  LQ12864SPI.o [1]
+OLED_PrintValueFP       0x10000909    0xbc  Code  Gb  LQ12864SPI.o [1]
+OLED_Refresh            0x20000129     0x1  Data  Gb  debug.o [1]
+OLED_Set_Pos            0x100007e7    0x26  Code  Gb  LQ12864SPI.o [1]
+OLED_WrCmd              0x10000791    0x56  Code  Gb  LQ12864SPI.o [1]
+OLED_WrDat              0x1000072d    0x64  Code  Gb  LQ12864SPI.o [1]
+OLED_WrLogo             0x100006d5    0x56  Code  Gb  LQ12864SPI.o [1]
+OSC_HAL_SetCapacitor    0x10003b99     0xc  Code  Gb  fsl_osc_hal.o [1]
+OSC_HAL_SetExternalRefClkCmd
+                        0x1000387f     0xa  Code  Lc  fsl_clock_manager.o [1]
+OSC_HAL_SetExternalRefClkDiv
+                        0x10003893     0xe  Code  Lc  fsl_clock_manager.o [1]
+OSC_HAL_SetExternalRefClkInStopModeCmd
+                        0x10003889     0xa  Code  Lc  fsl_clock_manager.o [1]
+OriginLightCnt          0x20000422     0x2  Data  Gb  ImagePro.o [1]
+OriginSignalPosition    0x20000418     0x2  Data  Gb  ImagePro.o [1]
+PID_SPEED               0x200004ac    0x10  Data  Gb  control.o [1]
+PID_TURN                0x20000554    0x10  Data  Gb  control.o [1]
+PIT0_IRQHandler         0x1000462b    0xb6  Code  Gb  APPmain.o [1]
+PIT0_IRQHandler::cnt    0x20001e17     0x1  Data  Lc  APPmain.o [1]
+PIT0_IRQHandler::flag_100ms
+                        0x20001e16     0x1  Data  Lc  APPmain.o [1]
+PIT1_IRQHandler         0x100046e1    0x22  Code  Gb  APPmain.o [1]
+PIT1_IRQHandler::CCD_cnt
+                        0x20000428     0x4  Data  Lc  APPmain.o [1]
+PIT2_IRQHandler         0x10004d6f     0xc  Code  Gb  LQPIT.o [1]
+PIT3_IRQHandler         0x10004d7b    0x1a  Code  Gb  LQPIT.o [1]
+PIT_Init                0x10004d37    0x38  Code  Gb  LQPIT.o [1]
+PLL150MHz               0x10004c04    0x18  Data  Gb  LQ_PLL.o [1]
+PLL180MHz               0x10004c1c    0x18  Data  Gb  LQ_PLL.o [1]
+PLL200MHz               0x10004c34    0x18  Data  Gb  LQ_PLL.o [1]
+PLL235MHz               0x10004c4c    0x18  Data  Gb  LQ_PLL.o [1]
+PLL250MHz               0x10004c64    0x18  Data  Gb  LQ_PLL.o [1]
+PLL275MHz               0x10004c7c    0x18  Data  Gb  LQ_PLL.o [1]
+PLL_Init                0x10004ac5   0x10e  Code  Gb  LQ_PLL.o [1]
+PORTA_IRQHandler        0x10003be3    0x1e  Code  Gb  LQMT9V034.o [1]
+PORTB_IRQHandler        0x10003045    0x7a  Code  Gb  Ultrasound.o [1]
+PORTX                   0x20000200    0x14  Data  Gb  LQGPIO.o [1]
+Page_Index              0x20000126     0x1  Data  Gb  debug.o [1]
+Para_Checked            0x20000128     0x1  Data  Gb  debug.o [1]
+Para_Index              0x20000127     0x1  Data  Gb  debug.o [1]
+Para_Index_Limit        0x20000124     0x1  Data  Gb  debug.o [1]
+Para_Init               0x100047df    0x24  Code  Gb  function.o [1]
+Para_Name               0x20000190    0x54  Data  Gb  debug.o [1]
+Para_Update             0x100013f7    0x56  Code  Gb  debug.o [1]
+PreDev                  0x20000110     0x4  Data  Gb  control.o [1]
+RW$$Base                0x20000000           --   Gb  - Linker created -
+RW$$Limit               0x20000428           --   Gb  - Linker created -
+Read_Switch             0x100016ad   0x10e  Code  Gb  debug.o [1]
+Region$$Table$$Base     0x100052d4           --   Gb  - Linker created -
+Region$$Table$$Limit    0x10005300           --   Gb  - Linker created -
+RunTime                 0x20000170     0x4  Data  Gb  debug.o [1]
+SCB_EnableDCache        0x1000507b    0x4e  Code  Lc  system_MKV58F24.o [1]
+SCB_EnableICache        0x10005059    0x22  Code  Lc  system_MKV58F24.o [1]
+SCCB_Ack                0x10003f5d    0x38  Code  Lc  SCCB.o [1]
+SCCB_Init               0x10003d71    0x24  Code  Gb  LQMT9V034.o [1]
+SCCB_NoAck              0x10003f95    0x38  Code  Lc  SCCB.o [1]
+SCCB_ReadByte           0x1000411f    0x28  Code  Gb  SCCB.o [1]
+SCCB_ReadByte_one       0x10004147    0x78  Code  Lc  SCCB.o [1]
+SCCB_ReceiveByte        0x10004057    0x5a  Code  Lc  SCCB.o [1]
+SCCB_SendByte           0x10004013    0x44  Code  Lc  SCCB.o [1]
+SCCB_Start              0x10003ec9    0x60  Code  Lc  SCCB.o [1]
+SCCB_Stop               0x10003f29    0x34  Code  Lc  SCCB.o [1]
+SCCB_Wait               0x10003db5    0x10  Code  Gb  LQMT9V034.o [1]
+SCCB_WaitAck            0x10003fcd    0x46  Code  Lc  SCCB.o [1]
+SCCB_WriteByte          0x100040b5    0x24  Code  Gb  SCCB.o [1]
+SCCB_WriteByte_one      0x100040d9    0x46  Code  Lc  SCCB.o [1]
+SMC_HAL_GetStat         0x10004f15     0x4  Code  Gb  fsl_smc_hal.o [1]
+SMC_HAL_SetMode         0x10004dff   0x108  Code  Gb  fsl_smc_hal.o [1]
+SMC_HAL_SetPowerModeHsrun
+                        0x10004de5    0x1a  Code  Lc  fsl_smc_hal.o [1]
+SMC_HAL_SetPowerModeRun
+                        0x10004db1    0x1a  Code  Lc  fsl_smc_hal.o [1]
+SMC_HAL_SetPowerModeVlpr
+                        0x10004dcb    0x1a  Code  Lc  fsl_smc_hal.o [1]
+SMC_HAL_SetProtection   0x10004ac1     0x4  Code  Lc  LQ_PLL.o [1]
+ScanEndLine             0x20000411     0x1  Data  Gb  ImagePro.o [1]
+ScanStartLine           0x20000410     0x1  Data  Gb  ImagePro.o [1]
+SendPara                0x2000012a     0x1  Data  Gb  debug.o [1]
+Send_CCD                0x10001a9b    0x32  Code  Gb  debug.o [1]
+Send_Variable           0x10001a49    0x52  Code  Gb  debug.o [1]
+Send_img                0x20000125     0x1  Data  Gb  debug.o [1]
+ServoFTM_PWM_Init       0x100020f5   0x1a4  Code  Gb  LQFTM.o [1]
+ServoPIDMax             0x20000006     0x2  Data  Gb  control.o [1]
+ServoPIDMin             0x20000008     0x2  Data  Gb  control.o [1]
+ServoPWM                0x20001e14     0x2  Data  Gb  control.o [1]
+Servo_Duty              0x100023cd     0x6  Code  Gb  LQFTM.o [1]
+Servo_Init              0x10002397    0x12  Code  Gb  LQFTM.o [1]
+SetSpeedLeft            0x20000544     0x4  Data  Gb  control.o [1]
+SetSpeedRight           0x20000520     0x4  Data  Gb  control.o [1]
+Set_Angle               0x20001e18     0x1  Data  Gb  control.o [1]
+SignalAvgRow            0x2000041e     0x2  Data  Gb  ImagePro.o [1]
+SignalFirstRow          0x20000413     0x1  Data  Gb  ImagePro.o [1]
+SignalGet               0x10004929   0x146  Code  Gb  ImagePro.o [1]
+SignalLastRow           0x20000414     0x1  Data  Gb  ImagePro.o [1]
+SignalPosition          0x20000416     0x2  Data  Gb  ImagePro.o [1]
+SpeedControlIntegralLeft
+                        0x20000534     0x4  Data  Gb  control.o [1]
+SpeedControlIntegralRight
+                        0x20000514     0x4  Data  Gb  control.o [1]
+SpeedControlOutNewLeft  0x20000518     0x4  Data  Gb  control.o [1]
+SpeedControlOutNewRight
+                        0x2000050c     0x4  Data  Gb  control.o [1]
+SpeedControlOutOldLeft  0x20000530     0x4  Data  Gb  control.o [1]
+SpeedControlOutOldRight
+                        0x20000510     0x4  Data  Gb  control.o [1]
+SpeedCount              0x20000538     0x4  Data  Gb  control.o [1]
+Speed_Control           0x10002785    0x9e  Code  Gb  control.o [1]
+Speed_Control::PreErrorRight
+                        0x200004bc    0x50  Data  Lc  control.o [1]
+Speed_Control_Output    0x10002823    0x22  Code  Gb  control.o [1]
+Speed_Filter_Times      0x20000000     0x4  Data  Gb  control.o [1]
+Start_Cnt               0x20000174     0x4  Data  Gb  debug.o [1]
+Starting                0x20001e19     0x1  Data  Gb  control.o [1]
+Step                    0x20000178    0x18  Data  Gb  debug.o [1]
+Step_Index              0x2000012c     0x1  Data  Gb  debug.o [1]
+Stop                    0x20000005     0x1  Data  Gb  control.o [1]
+SysTick_Handler         0x10005351    0x10  Code  Gb  fsl_hwtimer_systick_irq.o [1]
+SystemCoreClock         0x20000294     0x4  Data  Gb  system_MKV58F24.o [1]
+SystemInit              0x100050c9    0x2a  Code  Gb  system_MKV58F24.o [1]
+TakeOff                 0x20000528     0x4  Data  Gb  control.o [1]
+UART0_RX_TX_IRQHandler  0x10001d39    0x12  Code  Gb  LQUART.o [1]
+UART1_RX_TX_IRQHandler  0x10001d4b    0x12  Code  Gb  LQUART.o [1]
+UART2_RX_TX_IRQHandler  0x10001d5d    0x12  Code  Gb  LQUART.o [1]
+UART3_RX_TX_IRQHandler  0x10001d6f    0x12  Code  Gb  LQUART.o [1]
+UART4_RX_TX_IRQHandler  0x10001d81    0x1a  Code  Gb  LQUART.o [1]
+UART5_RX_TX_IRQHandler  0x10001d9b    0x12  Code  Gb  LQUART.o [1]
+UARTN                   0x2000027c    0x18  Data  Gb  LQUART.o [1]
+UART_Get_Char           0x10001cef    0x14  Code  Gb  LQUART.o [1]
+UART_Init               0x10001bd9   0x116  Code  Gb  LQUART.o [1]
+UART_Put_Char           0x10001d03    0x14  Code  Gb  LQUART.o [1]
+USDelay                 0x10002fd5    0x12  Code  Gb  Ultrasound.o [1]
+USDistance              0x20001e0a     0x2  Data  Gb  Ultrasound.o [1]
+USFrameCnt              0x20001e09     0x1  Data  Gb  Ultrasound.o [1]
+USStatus                0x20001e08     0x1  Data  Gb  Ultrasound.o [1]
+USTrigger               0x1000300b    0x38  Code  Gb  Ultrasound.o [1]
+UStic                   0x20001e0c     0x4  Data  Gb  Ultrasound.o [1]
+UStoc                   0x20001e10     0x4  Data  Gb  Ultrasound.o [1]
+UltrasoundInit          0x10002fe7    0x24  Code  Gb  Ultrasound.o [1]
+Variable                0x20000564    0x50  Data  Gb  debug.o [1]
+Variable_update         0x10001389    0x6e  Code  Gb  debug.o [1]
+Voltage                 0x2000016c     0x4  Data  Gb  debug.o [1]
+ZI$$Base                0x20000428           --   Gb  - Linker created -
+ZI$$Limit               0x20001e1c           --   Gb  - Linker created -
+__RAM_VECTOR_TABLE_SIZE {Abs}
+                        0x00000000          Data  Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x10000000          Data  Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x10000000          Data  Gb  command line/config [2]
+__Vectors               0x10000000           --   Gb  startup_MKV58F24.o [1]
+__Vectors_End           0x10000400          Data  Gb  startup_MKV58F24.o [1]
+__Vectors_Size {Abs}    0x00000400           --   Gb  startup_MKV58F24.o [1]
+__aeabi_assert          0x10003b75    0x24  Code  Gb  ABIassert.o [6]
+__aeabi_d2f             0x10001245          Code  Gb  DblToFlt.o [4]
+__aeabi_dadd            0x100010cd          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x10002d8d          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x10001dad          Code  Gb  DblMul.o [4]
+__aeabi_f2d             0x10001085          Code  Gb  FltToDbl.o [4]
+__aeabi_i2d             0x10002d69          Code  Gb  S32ToDbl.o [4]
+__aeabi_memcpy          0x1000449d          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x100044bd          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x100044bd          Code  Gb  ABImemcpy.o [5]
+__cmain                 0x10005301          Code  Gb  cmain.o [5]
+__exit                  0x10003bad    0x14  Code  Gb  exit.o [6]
+__iar_dadd              0x100012ad          Code  Gb  DblSub.o [4]
+__iar_data_init3        0x10005289    0x28  Code  Gb  data_init.o [5]
+__iar_dsub              0x100010dd          Code  Gb  DblAdd.o [4]
+__iar_dsubStart         0x100010ef          Code  Gb  DblAdd.o [4]
+__iar_init_vfp          0x100052b1          Code  Gb  fpinit_M.o [4]
+__iar_packbits_init3    0x10005109    0x9c  Code  Gb  packbits_init.o [5]
+__iar_program_start     0x10005361          Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__iar_zero_init3        0x100051e5    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x1000531f     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x10000000          Data  Gb  startup_MKV58F24.o [1]
+__vector_table_0x1c     0x1000001c          Data  Gb  startup_MKV58F24.o [1]
+_call_main              0x1000530d          Code  Gb  cmain.o [5]
+_exit                   0x10005329          Code  Gb  cexit.o [5]
+_main                   0x1000531b          Code  Gb  cmain.o [5]
+abort                   0x10003ba5     0x6  Code  Gb  abort.o [3]
+ad1                     0x2000042c    0x80  Data  Gb  CCD.o [1]
+bus_clk_M               0x200005e0     0x4  Data  Gb  LQ_PLL.o [1]
+camera_cfgnum           0x20000278     0x1  Data  Gb  LQMT9V034.o [1]
+camera_reg              0x20000214    0x64  Data  Gb  LQMT9V034.o [1]
+core_clk_M              0x200005dc     0x4  Data  Gb  LQ_PLL.o [1]
+duzhuan                 0x100025d1    0x7c  Code  Gb  control.o [1]
+duzhuanFlag             0x2000052c     0x4  Data  Gb  control.o [1]
+exit                    0x10005323     0x4  Code  Gb  exit.o [3]
+g_fastInternalRefClkFreq
+                        0x200001e4     0x4  Data  Gb  fsl_mcg_hal.o [1]
+g_hwtimersSystick       0x200005b4     0x4  Data  Lc  fsl_hwtimer_systick.o [1]
+g_oscBase               0x1000536c     0x4  Data  Gb  fsl_clock_manager_common.o [1]
+g_slowInternalRefClkFreq
+                        0x200001e8     0x4  Data  Gb  fsl_mcg_hal.o [1]
+g_xtal0ClkFreq          0x200005b8     0x4  Data  Gb  fsl_mcg_hal.o [1]
+gpio_get                0x10000fb7    0x1a  Code  Gb  LQGPIO.o [1]
+gpio_set                0x10000f8b    0x2c  Code  Gb  LQGPIO.o [1]
+img                     0x20000a94  0x12c0  Data  Gb  LQMT9V034.o [1]
+img_extract             0x10003dc5    0x8e  Code  Gb  LQMT9V034.o [1]
+imgbuff                 0x200005e4   0x258  Data  Gb  LQMT9V034.o [1]
+imgbuff_process         0x2000083c   0x258  Data  Gb  LQMT9V034.o [1]
+inf0_data               0x200005bc     0x4  Data  Gb  infrared.o [1]
+inf1_data               0x200005c0     0x4  Data  Gb  infrared.o [1]
+inf2_data               0x200005c4     0x4  Data  Gb  infrared.o [1]
+inf3_data               0x200005c8     0x4  Data  Gb  infrared.o [1]
+inf4_data               0x200005cc     0x4  Data  Gb  infrared.o [1]
+inf5_data               0x200005d0     0x4  Data  Gb  infrared.o [1]
+inf6_data               0x200005d4     0x4  Data  Gb  infrared.o [1]
+inf7_data               0x200005d8     0x4  Data  Gb  infrared.o [1]
+infrared_Flag           0x20000120     0x4  Data  Gb  control.o [1]
+infrared_init           0x10004835    0x6a  Code  Gb  infrared.o [1]
+infrared_pro            0x1000489f    0x7c  Code  Gb  infrared.o [1]
+infrared_succeed        0x20000114     0x4  Data  Gb  control.o [1]
+init                    0x1000476d    0x72  Code  Gb  function.o [1]
+init_data_bss           0x10005259    0x30  Code  Gb  startup.o [1]
+main                    0x10004545    0xe6  Code  Gb  APPmain.o [1]
+mcgModeMatrix           0x10003b34    0x40  Data  Lc  fsl_clock_manager.o [1]
+my_putchar              0x10001381     0x8  Code  Gb  debug.o [1]
+new_img                 0x20001e1b     0x1  Data  Gb  LQMT9V034.o [1]
+reverse                 0x20001e1a     0x1  Data  Gb  LQ12864SPI.o [1]
+sendimg                 0x10004a85    0x3c  Code  Gb  search.o [1]
+sever_middle            0x200000d4     0x4  Data  Gb  control.o [1]
+sever_range             0x200000d8     0x4  Data  Gb  control.o [1]
+time_delay_ms           0x10001041     0x2  Code  Gb  LPTMR.o [1]
+twinkle_Flag            0x20000118     0x4  Data  Gb  control.o [1]
+twinkle_Flag2           0x2000011c     0x4  Data  Gb  control.o [1]
+
+
+[1] = C:\Users\lenovo\Desktop\KV58yhy\KV58\debug\obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  21 314 bytes of readonly  code memory
+     376 bytes of readwrite code memory
+     979 bytes of readonly  data memory
+  15 524 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
