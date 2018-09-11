@@ -36,12 +36,10 @@ QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
 #define SW3_IN   gpio_get(SW3)
 #define SW4_IN   gpio_get(SW4)
 
-#define BT_SHOW_IN  gpio_get(BT_SHOW)
-#define BT_LEFT_IN   gpio_get(BT_LEFT)
-#define BT_UP_IN     gpio_get(BT_UP)
-#define BT_DOWN_IN   gpio_get(BT_DOWN)
+//#define BT_SHOW_IN  gpio_get(BT_SHOW)
+#define BT_LEFT_IN_RIGHT_IN   gpio_get(BT_RIGHT_LEFT)
+#define BT_UP_IN_DOWN_IN     gpio_get(BT_UP_DOWN)
 #define BT_YES_IN    gpio_get(BT_YES)
-#define BT_RIGHT_IN  gpio_get(BT_RIGHT)
 
 /*******************************************************************************
 * Definitions
